@@ -94,7 +94,7 @@ const Register = () => {
         </div>
 
         <div className="row d-flex justify-content-center">
-          <p>{errMsg}</p>
+          <p className="errMsg">{errMsg}</p>
           <div className="col-lg-7">
             <form action="" className="row" onSubmit={handleSubmit}>
               <div className="form-group col-12">
