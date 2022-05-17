@@ -77,7 +77,7 @@ const Login = () => {
 
               
             <div className="row d-flex justify-content-center">
-                <p className="errMsg">{errMsg}</p>
+                <p className="errmsg">{errMsg}</p>
                 <div className="col-lg-7">
                     <form action="" className="row" onSubmit={handleSubmit}>
                         <div className="form-group col-12">
