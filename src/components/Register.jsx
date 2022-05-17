@@ -94,8 +94,8 @@ const Register = () => {
         </div>
 
         <div className="row d-flex justify-content-center">
-          <p className="errmsg">{errMsg}</p>
           <div className="col-lg-7">
+          <p className={errMsg ? "errmsg" : "offscreen"}>{errMsg}</p>
             <form action="" className="row" onSubmit={handleSubmit}>
               <div className="form-group col-12">
                 <label htmlFor="username">Username</label>
