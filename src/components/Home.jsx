@@ -36,9 +36,12 @@ const Home = () => {
                 // set users state when component mounts
                 isMounted && setPokemon(data);
             } catch (error) {
-                console.error(error);
-                // when refreshToken expires
-                navigate("/login", { state: { from: location }, replace: true });
+                if (process.env === "production" && error) {
+                    console.error(error);
+                } else {
+                    // when refreshToken expires
+                    navigate("/login", { state: { from: location }, replace: true });
+                }
             }
         }
 
@@ -49,7 +52,7 @@ const Home = () => {
             // don't set state if component unmounts
             isMounted = false;
             // cancel request if component unmounts
-            // controller.abort();
+            controller.abort();
         }
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
