@@ -7,7 +7,7 @@ This is a simple project that allows a user to select their favorite pokemon fro
 
 ## React
 
-This project was bootstrapped with typescript and create-react-app. `npx create-react-app . --template typescript`
+This project was bootstrapped with typescript and create-react-app. `npx create-react-app .`
 
 ## Project Set-up
 
